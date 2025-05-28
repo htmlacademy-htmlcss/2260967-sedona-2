@@ -2,7 +2,7 @@
 
 * Студент: [Юлия Потапова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2260967).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
-* Сайт [Мой проект Седона] (https://potapovayulia.github.io/2260967-sedona-2/)
+* Сайт [Мой проект Седона](https://potapovayulia.github.io/2260967-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
