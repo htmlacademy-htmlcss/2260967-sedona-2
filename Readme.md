@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Потапова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2260967).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачёв](https://htmlacademy.ru/profile/angra).
 
 ---
 
