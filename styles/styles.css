@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/ptsans-400.woff2)format(.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/ptsans-700.woff2)format(.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/fonts/ptsans-400.woff2)format(.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(/fonts/ptsans-700.woff2)format(.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 400;
+  src: url(/fonts/ptsans-400.woff2)format(.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url(/fonts/ptsans-700.woff2)format(.woff2);
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.page-header {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.navigation {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* не понимаю что сюда прописывать
+.navigation-list{
+}
+*/
+/* не понимаю что сюда прописывать
+.navigation-item{
+}
+*/
+.navigation-link {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button {
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+.background-img {
+  background-image: url(../images/index-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1200px;
+  height: 485px;
+
+  .main-index {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  .advantages-item-dark-blue {
+    background-color: #82B3D3;
+    color: #FFFFFF;
+  }
+
+  .advantages-item-light-blue {
+    background-color: #83B3D31F;
+    color: #000000;
+  }
