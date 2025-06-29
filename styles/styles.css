@@ -14,13 +14,25 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
   color: #000000;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .page-header {
@@ -29,8 +41,28 @@ body {
 }
 
 .navigation {
+  display: flex;
+  margin: 0 auto;
   background-color: #FFFFFF;
   color: #000000;
+}
+
+.navigation-list {
+  width: 339px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navigation-user {
+  width: 268px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 /* не понимаю что сюда прописывать
@@ -71,7 +103,16 @@ body {
   color: #000000;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-item {
+  width: 400px;
+  height: 385px;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -86,19 +127,28 @@ body {
   color: #000000;
 }
 
+.advantages-item-inner {
+  padding: 81px 85px;
+  align-content: center;
+  text-align: center;
+}
+
 .housing {
   background-image: url(../images/icons/advantage-icon-house.svg);
   background-repeat: no-repeat;
+  background-position: top;
 }
 
 .food {
   background-image: url(../images/icons/advantage-icon-food.svg);
   background-repeat: no-repeat;
+  background-position: top;
 }
 
 .souvenirs {
   background-image: url(../images/icons/advantage-icon-shop.svg);
   background-repeat: no-repeat;
+  background-position: top;
 }
 
 .subscribe {
@@ -115,4 +165,57 @@ body {
 .catalog-forms {
   background: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  max-width: 142px;
+}
+
+.footer-social-link-vk {
+  background-image: url(../images/icons/icon-vk.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 24px;
+  height: 14px;
+}
+
+.footer-social-link-tg{
+  background-image: url(../images/icons/icon-tg.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 16px;
+}
+.footer-social-link-youtube{
+  background-image: url(../images/icons/icon-youtube.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 22px;
+  height: 17px;
+}
+ul {
+  list-style-type: none;
+}
+.contact-phone-container{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-academy-container{
+  background-image: url(../images/logo-htmlacademy.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 115px;
+  height: 33px;
 }
