@@ -20,42 +20,81 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #000000;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0 auto;
   width: 1200px;
 }
 
 .page-header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
 }
 
 .navigation {
   display: flex;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
 }
 
-.navigation-list {
-  width: 339px;
+.index-logo {
   margin: 0;
   padding: 0;
+  margin-left: 70px;
+  margin-right: 44px;
 
 }
 
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 339px;
+  min-height: 64px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-width: 100px;
+  min-height: 64px;
+}
+
+.navigation-link {
+  display: block;
+  margin: 0;
+  padding: 20px 16px;
+  align-self: start;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .navigation-user {
-  width: 268px;
+  display: flex;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -65,29 +104,14 @@ body {
   flex-grow: 1;
 }
 
-/* не понимаю что сюда прописывать
-.navigation-list{
-}
-*/
-/* не понимаю что сюда прописывать
-.navigation-item{
-}
-*/
-.navigation-link {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
-
 .index-button {
   background-color: #756157;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .catalog-button {
-  background-color: #82B3D3;
-  color: #FFFFFF;
+  background-color: #82b3d3;
+  color: #ffffff;
 }
 
 .background-img {
@@ -99,7 +123,7 @@ body {
 }
 
 .main-index {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -112,9 +136,15 @@ body {
 
 .advantages-item {
   width: 400px;
-  height: 385px;
-  background-color: #82B3D3;
+  min-height: 385px;
+  background-color: #82b3d3;
   color: #FFFFFF;
+}
+
+.advantages-item-wide {
+  display: flex;
+  width: 100%;
+}
 }
 
 .light-blue {
@@ -159,7 +189,7 @@ body {
 }
 
 .main-catalog {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .catalog-forms {
@@ -168,7 +198,7 @@ body {
 }
 
 .catalog-forms {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .catalog-filter-group-container {
@@ -184,9 +214,18 @@ body {
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   max-width: 142px;
+}
+
+.footer-social-item {
+  margin: 0;
+  padding: 0;
+  width: 47px;
+  height: 40px;
 }
 
 .footer-social-link-vk {
@@ -235,10 +274,26 @@ ul {
 
 .breadcrumps {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumps-item {
   margin-right: 25px;
+}
+
+.sorting-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+
+}
+
+.sorting-container .button {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
 }
 
 .catalog-filter-group {
@@ -259,14 +314,48 @@ ul {
 
 .hotel-cards-list {
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
+  padding: 0;
   padding-right: 50px;
   padding-left: 70px;
 }
-.hotel-cards-item{
+
+.hotel-cards-item {
   margin-right: 20px;
-  max-width: auto;
+  width: 340px;
 }
-.pagination{
+
+.pagination {
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
+}
+
+.pagination-item {
+  margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-decoration: none;
+}
+
+.pagination-link-current {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #f2f2f2;
 }

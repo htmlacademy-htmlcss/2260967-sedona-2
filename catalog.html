@@ -108,19 +108,19 @@
           </form>
         </section>
         <section class="hotel-cards">
-          <h2>Найдено гостиниц: 38</h2>
-          <form class="select" action="https://echo.htmlacademy.ru/" method="post">
-            <select name="sort-hotels">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive"> Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
-          </form>
-
-
-          <a class="visually-hidden" href="#"> Плитки</a>
-          <a class="visually-hidden" href="#"> Карточки</a>
-          <a class="visually-hidden" href="#"> Список</a>
+          <div class="sorting-container">
+            <h2>Найдено гостиниц: 38</h2>
+            <form class="select" action="https://echo.htmlacademy.ru/" method="post">
+              <select name="sort-hotels">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive"> Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+            </form>
+            <button class="button"> <a class="visually-hidden" href="#"> Плитки</a></button>
+            <button class="button"><a class="visually-hidden" href="#"> Карточки</a></button>
+             <button class="button"><a class="visually-hidden" href="#"> Список</a></button>
+          </div>
           <ul class="hotel-cards-list">
             <li class="hotel-cards-item">
               <img class="hotel-cards-photo" src="./images/hotel-images-cards/hotel-amara.jpg" width="300" height="212"
@@ -177,7 +177,9 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <p>/...</p>
+              <p>...</p>
+              <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
           <h2>Подпишитесь на рассылку</h2>
