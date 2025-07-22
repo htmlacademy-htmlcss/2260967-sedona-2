@@ -101,8 +101,11 @@ body {
   position: relative;
   width: 20px;
   height: 20px;
-  margin: 0 10px 0 0;
-  padding: 22px 12px 22px 5px;
+  padding: 22px 12px;
+}
+
+.navigation-user-button {
+  margin-left: 20px;
 }
 
 .navigation-link {
@@ -172,7 +175,6 @@ body {
 
 .navigation-link-button {
   display: block;
-  margin: auto;
   padding: 8px 34px;
   text-decoration: none;
   font-family: inherit;
@@ -480,6 +482,7 @@ body {
 
 .newsletter-form {
   display: flex;
+  margin-bottom: 104px;
 }
 
 .subscribe {
@@ -497,7 +500,7 @@ body {
   flex-direction: column;
   background-color: #ffffff;
   width: 1200px;
-  height: 451px;
+
 }
 
 .subscribe-slogan-catalog {
@@ -548,6 +551,7 @@ body {
 
 .subscribe-input {
   padding: 14px 20px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   width: 412px;
@@ -563,6 +567,7 @@ body {
   padding: 0;
   width: 232px;
   text-align: center;
+  font-family: inherit;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -582,8 +587,9 @@ body {
 .catalog-forms {
   background: url(../images/catalog-background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
-  padding: 0 70px;
+  padding: 35px 70px 70px 70px;
 }
 
 .catalog-forms-title {
@@ -592,6 +598,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+  padding-bottom: 8px;
 }
 
 .catalog-filter-item {
@@ -600,19 +607,30 @@ body {
   position: relative;
 }
 
+.catalog-filter-item:last-child {
+  padding: 0;
+}
+
 .catalog-filter-group-container {
   display: flex;
+  margin-top: 40px;
 }
 
 .catalog-filter-group {
   border: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 70px;
+  width: 150px;
   padding-right: 70px;
 }
 
+.house-type {
+  margin-right: 140px;
+  padding-right: 0;
+}
+
 .catalog-filter-title {
+  padding: 0;
   padding-bottom: 32px;
   font-size: 20px;
   line-height: 24px;
@@ -668,13 +686,12 @@ body {
 }
 
 .page-footer {
-  display: flex;
-  padding: 40px 70px 30px 70px;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: flex-end;
-  min-height: 40px;
+    display: flex;
+    padding: 45px 70px 35px 70px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 40px;
 }
 
 
@@ -730,7 +747,12 @@ body {
   width: 288px;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
-  margin-top: 44px;
+
+}
+
+.catalog-scale-wrapper {
+  height: 20px;
+  align-content: center;
 }
 
 .catalog-scale-bar {
@@ -754,14 +776,15 @@ body {
 }
 
 .button-max {
-  right: -15px;
+  right: -3px;
   top: -7px;
 }
 
 .contact-phone {
-  font-size: 40px;
-  text-decoration: none;
-  color: #000000;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .contact-phone:hover {
@@ -776,21 +799,23 @@ body {
   padding: 0;
   list-style-type: none;
   max-width: 142px;
+  height: 100%;
 }
 
 .footer-social-item {
   width: 47px;
-  height: 40px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   color: #83b3d3;
 }
-.logo-academy{
- display: flex;
-  align-items: flex-end;
 
+.logo-academy {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
 }
+
 .footer-social-link-youtube path:hover {
   fill: #68a2ca;
 }
@@ -813,13 +838,40 @@ ul {
 
 .breadcrumps {
   display: flex;
+  gap: 28px;
   margin: 0;
   padding: 0;
 }
 
 .breadcrumps-item {
-  margin-right: 25px;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
+
+.breadcrumps-item-home {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumps-item-home::after {
+  position: absolute;
+  content: url(../images/catalog-arrow.svg);
+  left: 200%;
+}
+
+.breadcrumps-link {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumps-link-home {
+  position: relative;
+  content: url(../images/icons/icon-bradcrumps-home.svg);
+}
+
+
 
 .sorting-container {
   display: flex;
@@ -831,6 +883,7 @@ ul {
 }
 
 .sorting-title {
+  align-self: center;
   margin: 0;
   margin-right: 200px;
   padding: 0;
@@ -858,28 +911,11 @@ ul {
 }
 
 .catalog-form-buttons {
-  margin-left: 70px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
-.breadcrumps-link-home {
-  position: relative;
-  background: url(../images/icons/icon-bradcrumps-home.svg);
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  display: block;
-  width: 13px;
-  height: 15px;
-}
-
-.breadcrumps-item-home::after {
-  position: relative;
-  margin-right: 25px;
-  right: -17px;
-  bottom: 16px;
-  content: url(../images/catalog-arrow.svg)
-}
 
 .hotel-cards-list {
   position: relative;
@@ -920,19 +956,28 @@ ul {
 
 .hotel-title {
   margin: 0;
+  margin-top: 13px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-align: left;
 }
 
-.hotel-type,
+.hotel-type {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
 .hotel-price {
   margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  text-align: end;
 }
 
 .about-button {
@@ -983,7 +1028,10 @@ ul {
 
 .catalog-button-apply {
   display: block;
-  padding: 8px 20px;
+  box-sizing: border-box;
+  font-family: inherit;
+  width: 191px;
+  padding: 8px 50px;
   margin-top: 56px;
   text-decoration: none;
   background-color: #82b3d3;
@@ -1001,6 +1049,7 @@ ul {
 }
 
 .catalog-button-reset {
+  font-family: inherit;
   width: 100%;
   margin: 0;
   margin-top: 32px;
@@ -1038,11 +1087,18 @@ ul {
 
 .rating-wrap {
   display: flex;
+  align-items: center;
+
 }
 
 .rating-text {
-  padding: 0;
+  display: block;
   margin: 0;
+  padding: 9px 22px 8px 23px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
 }
 
 .stars {
@@ -1065,17 +1121,17 @@ ul {
 }
 
 .stars-3 {
-  width: 60px;
+  width: 65px;
 }
 
 .stars-4 {
-  width: 80px;
+  width: 89px;
 }
 
 .pagination {
   display: flex;
   margin: 0;
-  padding: 0 70px;
+  padding: 0 70px 60px;
 }
 
 .pagination-item {
@@ -1092,6 +1148,22 @@ ul {
   font-weight: 700;
   color: #ffffff;
   background-color: #82b3d3;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.pagination-dots {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 10px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
   text-align: center;
