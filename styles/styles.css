@@ -189,6 +189,11 @@ body {
   background-color: #615048;
 }
 
+.navigation-link-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .navigation-user {
   display: flex;
   margin: 0;
@@ -382,9 +387,9 @@ body {
   background-color: #615048;
 }
 
-.catalog-button {
-  background-color: #82b3d3;
-  color: #ffffff;
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
 }
 
 .background-img {
@@ -561,6 +566,14 @@ body {
   background-color: #f2f2f2;
 }
 
+.subscribe-input:hover {
+  background-color: #e5e5e5;
+}
+
+.subscribe-input:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
 .subscribe-button {
   color: #ffffff;
   background-color: #82b3d3;
@@ -580,8 +593,9 @@ body {
   background-color: #68a2ca;
 }
 
-.subscribe-button:focus {
-  background-color: #68a2ca;
+.subscribe-button:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-forms {
@@ -686,12 +700,12 @@ body {
 }
 
 .page-footer {
-    display: flex;
-    padding: 45px 70px 35px 70px;
-    background-color: #ffffff;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 40px;
+  display: flex;
+  padding: 45px 70px 35px 70px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 40px;
 }
 
 
@@ -781,10 +795,10 @@ body {
 }
 
 .contact-phone {
-    font-size: 40px;
-    line-height: 40px;
-    text-decoration: none;
-    color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .contact-phone:hover {
@@ -1015,6 +1029,11 @@ ul {
   border: none;
   text-transform: uppercase;
   border-radius: 4px;
+}
+
+.catalog-button-curent {
+  padding: 8px 18px;
+  background-color: #7db54f;
 }
 
 .catalog-button:hover {
@@ -1442,7 +1461,7 @@ ul {
 
 .modal-search-button {
   font-family: inherit;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
