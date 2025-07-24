@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  min-width: 1020px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -143,20 +144,7 @@ body {
   color: #ffffff;
   background-color: #7db54f;
 }
-}
 
-/*
-.navigation-user-link{position: relative;
-    width: 20px;
-    height: 20px;
-    padding: 22px 12px;}
-
-.search-icon {
-  background-image: url(../images/icons/icon-search.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-*/
 .heart-icon {
   background-image: url(../images/icons/icon-heart.svg);
   background-repeat: no-repeat;
@@ -1160,8 +1148,8 @@ ul {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   padding: 10px;
   line-height: 36px;
   font-weight: 700;
