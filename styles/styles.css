@@ -196,6 +196,7 @@ body {
   padding: 0;
   margin-left: auto;
   align-items: center;
+  list-style-type: none;
 }
 
 .main-container {
@@ -413,6 +414,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item {
@@ -879,15 +881,12 @@ body {
   fill: #756157;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .breadcrumps {
   display: flex;
   gap: 28px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumps-item {
@@ -1216,6 +1215,7 @@ ul {
   display: flex;
   margin: 0;
   padding: 0 70px 60px;
+  list-style-type: none;
 }
 
 .pagination-item {
