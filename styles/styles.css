@@ -367,7 +367,10 @@ body {
   background-color: #756157;
   color: #ffffff;
 }
-
+.index-button:disabled{
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
 .search-button {
   display: block;
   padding: 8px 50px;
@@ -591,7 +594,10 @@ body {
   border: 0;
   border-radius: 0 4px 4px 0;
 }
-
+.subscribe-button:disabled{
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
 .subscribe-button:hover {
   background-color: #68a2ca;
 }
@@ -1088,6 +1094,10 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
 }
+.catalog-button:disabled{
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
 
 .catalog-button-curent {
   padding: 8px 18px;
@@ -1129,7 +1139,10 @@ body {
 .catalog-button-apply:hover {
   background-color: #68a2ca;
 }
-
+.catalog-button-apply:disabled{
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
 .catalog-button-reset {
   font-family: inherit;
   width: 100%;
@@ -1166,7 +1179,9 @@ body {
   background-position: 258px center;
   cursor: pointer;
 }
-
+.hotels-sorting:disabled{
+  color: rgba(0, 0, 0, 0.3);
+}
 .rating-wrap {
   display: flex;
   align-items: center;
