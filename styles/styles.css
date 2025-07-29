@@ -197,6 +197,7 @@ body {
   margin-left: auto;
   align-items: center;
   list-style-type: none;
+  margin-bottom: auto;
 }
 
 .main-container {
@@ -367,10 +368,12 @@ body {
   background-color: #756157;
   color: #ffffff;
 }
-.index-button:disabled{
+
+.index-button:disabled {
   background-color: #e5e5e5;
   color: #ffffff;
 }
+
 .search-button {
   display: block;
   padding: 8px 50px;
@@ -396,9 +399,9 @@ body {
 
 .background-img {
   background-image: url("../images/index-mask.svg"), url("../images/index-background.jpg");
-  background-color: #5291bb;;
+  background-color: #5291bb;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom center, top center;
 }
 
 
@@ -594,10 +597,12 @@ body {
   border: 0;
   border-radius: 0 4px 4px 0;
 }
-.subscribe-button:disabled{
+
+.subscribe-button:disabled {
   background-color: #e5e5e5;
   color: #ffffff;
 }
+
 .subscribe-button:hover {
   background-color: #68a2ca;
 }
@@ -679,6 +684,7 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 20px;
+  padding-right: 56px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -690,6 +696,22 @@ body {
 .input-price::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.input-price {
+  -moz-appearance: textfield;
+}
+
+.input-price:hover {
+  background-color: #f2f2f2;
+}
+
+.input-price:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.input-price:disabled {
+  opacity: 30%;
 }
 
 .input-price-min {
@@ -721,7 +743,6 @@ body {
   background-color: #ffffff;
   justify-content: space-between;
   align-items: flex-end;
-  height: 40px;
 }
 
 
@@ -825,6 +846,14 @@ body {
   cursor: pointer;
 }
 
+.catalog-range-button:hover {
+  background-color: #9b9b9b;
+}
+
+.catalog-range-button:active {
+  background-color: #82b3d3;
+}
+
 .button-min {
   top: -7px;
 }
@@ -923,6 +952,10 @@ body {
   content: url(../images/icons/icon-bradcrumps-home.svg);
 }
 
+.breadcrumps-link-home:hover {
+  opacity: 40%;
+}
+
 .sorting-link {
   display: block;
   min-width: 16px;
@@ -963,10 +996,13 @@ body {
   align-self: center;
   margin: 0;
   margin-right: 200px;
+  margin-top: 6px;
   padding: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-bottom: auto;
+
 }
 
 .sorting-buttons-wrapper {
@@ -1094,7 +1130,8 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
 }
-.catalog-button:disabled{
+
+.catalog-button:disabled {
   background-color: #e5e5e5;
   color: #ffffff;
 }
@@ -1139,10 +1176,12 @@ body {
 .catalog-button-apply:hover {
   background-color: #68a2ca;
 }
-.catalog-button-apply:disabled{
+
+.catalog-button-apply:disabled {
   background-color: #e5e5e5;
   color: #ffffff;
 }
+
 .catalog-button-reset {
   font-family: inherit;
   width: 100%;
@@ -1179,9 +1218,13 @@ body {
   background-position: 258px center;
   cursor: pointer;
 }
-.hotels-sorting:disabled{
+.hotels-sorting:hover{
+  outline: 3px solid #83b3d3;
+}
+.hotels-sorting:disabled {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .rating-wrap {
   display: flex;
   align-items: center;
@@ -1333,9 +1376,11 @@ body {
   border: none;
   cursor: pointer;
 }
-.modal-close-button:hover{
+
+.modal-close-button:hover {
   background-color: #e5e5e5;
 }
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -1376,10 +1421,17 @@ body {
   border: none;
   border-radius: 4px;
   font-family: "PT Sans", sans-serif;
-  ;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.form-input:hover {
+  background-color: #ddecf5;
+}
+
+.form-input:focus-visible {
+  outline: 3px solid #83b3d3;
 }
 
 .modal-input-description {
@@ -1426,7 +1478,12 @@ body {
   margin: 0;
   cursor: pointer;
 }
-
+.input-counter:hover{
+  background-color: #ddecf5;
+}
+.input-counter:active{
+  background-color: #83b3d3;
+}
 .input-counter-icon {
   color: #7561574d;
   width: 20px;
@@ -1471,7 +1528,9 @@ body {
   height: 100%;
   display: block;
 }
-
+.tooltip-icon:hover{
+  opacity: 30%;
+}
 .tooltip-text {
   position: absolute;
   padding: 22px 18px 21px 22px;
@@ -1520,7 +1579,12 @@ body {
   margin: 0;
   cursor: pointer;
 }
-
+.modal-input-counter:hover{
+  background-color: #ddecf5;
+}
+.modal-input-counter:active{
+  background-color: #83b3d3;
+}
 .modal-input-counter-icon {
   color: #7561574d;
   width: 20px;
@@ -1560,7 +1624,13 @@ body {
   box-sizing: border-box;
   margin-top: 48px;
   height: 60px;
-
+}
+.modal-search-button:hover{
+  background-color: #68a2cA;
+}
+.modal-search-button:active{
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 .modal-container-hidden {
   display: none;
