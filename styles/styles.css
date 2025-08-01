@@ -1558,18 +1558,23 @@ body {
   cursor: pointer;
 }
 
-.input-counter:hover {
-  background-color: #ddecf5;
-}
-
-.input-counter:active {
-  background-color: #83b3d3;
-}
-
 .input-counter-icon {
   color: #7561574d;
   width: 20px;
   height: 20px;
+}
+.input-counter-icon:hover {
+  opacity: 100%;
+}
+
+.input-counter-icon:focus-visible {
+  opacity: 100%;
+  outline: 3px solid #82b3d3;
+  z-index: 1;
+}
+
+.input-counter-icon:active {
+  opacity: 30%;
 }
 
 .modal-children-block {
@@ -1664,20 +1669,24 @@ body {
   cursor: pointer;
 }
 
-.modal-input-counter:hover {
-  background-color: #ddecf5;
-}
-
-.modal-input-counter:active {
-  background-color: #83b3d3;
-}
-
 .modal-input-counter-icon {
   color: #7561574d;
   width: 20px;
   height: 20px;
 }
+.modal-input-counter-icon:hover {
+  opacity: 100%;
+}
 
+.modal-input-counter-icon:focus-visible {
+  opacity: 100%;
+  outline: 3px solid #82b3d3;
+  z-index: 1;
+}
+
+.modal-input-counter-icon:active {
+  opacity: 30%;
+}
 .modal-input-number {
   padding: 14px 10px;
   font-size: 18px;
